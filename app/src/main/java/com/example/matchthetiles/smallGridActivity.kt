@@ -33,6 +33,16 @@ class SmallGridActivity : AppCompatActivity() {
 
         val tvTime : TextView = findViewById(R.id.timeTextView)
 
+        timer = object : CountDownTimer(time.toLong() * 1000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                tvTime.text = "Time left: " + millisUntilFinished / 1000 + "sec"
+            }
+
+            override fun onFinish() {
+                GameResult(false)
+            }
+        }.start()
+
         for(i in 1..(size/2)){
             randomArray.add(i)
             randomArray.add(i)
@@ -64,17 +74,6 @@ class SmallGridActivity : AppCompatActivity() {
                 onTileClicked(i)
             }
         }
-
-
-        timer = object : CountDownTimer(time.toLong() * 1000, 1000) {
-            override fun onTick(millisUntilFinished: Long) {
-                tvTime.text = "Time left: " + millisUntilFinished / 1000 + "sec"
-            }
-
-            override fun onFinish() {
-                GameResult(false)
-            }
-        }.start()
 
     }
 
