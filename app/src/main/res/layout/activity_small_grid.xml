@@ -6,7 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".SmallGridActivity">
 
+    <TextView
+        android:id="@+id/font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="MATCH THOSE TILES!"
+        android:textColor="#6229B3"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,18 +44,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -48,18 +61,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -72,18 +78,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView2"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -96,18 +95,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -120,18 +112,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView3"
             app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -144,18 +129,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView5"
             app:layout_constraintTop_toBottomOf="@+id/cardView4">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile6"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -168,18 +146,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -193,18 +164,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView3"
             app:layout_constraintTop_toBottomOf="@+id/cardView5">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile8"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -217,18 +181,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView5"
             app:layout_constraintTop_toBottomOf="@+id/cardView6">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile9"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -241,18 +198,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView4"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile10"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -262,21 +212,15 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView4"
             app:layout_constraintTop_toBottomOf="@+id/cardView8">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile11"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -288,18 +232,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView4"
             app:layout_constraintTop_toBottomOf="@+id/cardView9">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile12"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -312,17 +249,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView11">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile13"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -332,21 +263,15 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView12"
             app:layout_constraintTop_toBottomOf="@+id/cardView11">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile14"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -359,18 +284,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView13"
             app:layout_constraintTop_toBottomOf="@+id/cardView11">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile15"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -382,18 +300,11 @@
             app:layout_constraintStart_toEndOf="@+id/cardView14"
             app:layout_constraintTop_toBottomOf="@+id/cardView11">
 
-            <ImageSwitcher
+            <ImageView
+                android:id="@+id/Tile16"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </ImageSwitcher>
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
