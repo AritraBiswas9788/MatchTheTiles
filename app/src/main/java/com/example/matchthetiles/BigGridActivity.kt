@@ -1,18 +1,19 @@
 package com.example.matchthetiles
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.service.quicksettings.Tile
 import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import java.util.LinkedList
-import java.util.Stack
 
 class BigGridActivity : AppCompatActivity() {
 
     private var isClicked: Boolean = false
     private var clickedIndex: Int = 0
+    private var matchCount:Int=0
     private lateinit var TileList: Array<ImageView>
     private lateinit var ImageStack:Array<Int>
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,8 +88,18 @@ class BigGridActivity : AppCompatActivity() {
                             }, 500)
 
                         } else {
+                            matchCount++
                             isMatched.push(index)
                             isMatched.push(clickedIndex)
+                            if(matchCount==12)
+                            {
+                                val builder = AlertDialog.Builder(this)
+                                builder.setTitle("YOU HAVE WON!!!")
+                                builder.setPositiveButton("OK") { dialogInterface: DialogInterface, i: Int ->
+                                }
+                                builder.show()
+
+                            }
                         }
                         isClicked = false
                     } else {
