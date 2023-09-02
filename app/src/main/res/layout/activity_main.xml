@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
@@ -75,27 +75,32 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="580dp"
                 android:text="Choose no. of tiles"
+                android:layout_marginStart="10dp"
                 android:textSize="20sp" />
 
-            <LinearLayout
+
+
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/checkBox"
+                    android:id="@+id/radioButton16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="16" />
 
                 <RadioButton
-                    android:id="@+id/checkBox3"
+                    android:id="@+id/radioButton24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="24" />
-            </LinearLayout>
+            </RadioGroup>
+
+
 
         </LinearLayout>
 
@@ -112,34 +117,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="580dp"
                 android:text="Limit On"
+                android:textAlignment="center"
                 android:textSize="20sp" />
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/checkBox5"
+                    android:id="@+id/radioButtonTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Time" />
 
                 <RadioButton
-                    android:id="@+id/checkBox8"
+                    android:id="@+id/radioButtonMoves"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Moves" />
-            </LinearLayout>
+            </RadioGroup>
 
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonStartGame"
         android:layout_width="157dp"
         android:layout_height="46dp"
         android:layout_weight="1"
