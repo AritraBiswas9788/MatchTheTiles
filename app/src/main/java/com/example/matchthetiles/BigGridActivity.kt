@@ -85,6 +85,7 @@ class BigGridActivity : AppCompatActivity() {
                             Handler(Looper.getMainLooper()).postDelayed({
                                 TileList[clickedIndex].setImageResource(R.drawable.tile)
                                 tile.setImageResource(R.drawable.tile)
+                                clickedIndex=0
                             }, 500)
 
                         } else {
