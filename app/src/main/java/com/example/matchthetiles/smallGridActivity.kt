@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 class SmallGridActivity : AppCompatActivity() {
     private var matchedCount=0
     private var selected = -1
-    private lateinit var isOpen : ArrayList<Boolean>
+    private var isOpen = ArrayList<Boolean>()
     private val TilesList = ArrayList<ImageView>()
     private var randomArray = ArrayList<Int>()
     private var size = 0
@@ -58,10 +58,10 @@ class SmallGridActivity : AppCompatActivity() {
         TilesList.add(findViewById(R.id.Tile15))
         TilesList.add(findViewById(R.id.Tile16))
 
-        for(i in 0..size){
+        for(i in 0..(size-1)){
             TilesList[i].setOnClickListener{
                 onTileClicked(i)
-                Toast.makeText(this, "$i th tile is clicked",Toast.LENGTH_SHORT)
+                Toast.makeText(this, "$i th tile is clicked",Toast.LENGTH_SHORT).show()
             }
         }
 

@@ -1,9 +1,12 @@
 package com.example.matchthetiles
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.service.quicksettings.Tile
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import java.util.LinkedList
 import java.util.Stack
 
 class BigGridActivity : AppCompatActivity() {
@@ -70,24 +73,28 @@ class BigGridActivity : AppCompatActivity() {
         ImageStack.shuffle()
         for(tile in TileList)
             tile.setImageResource(R.drawable.tile)
-
+        var isMatched:LinkedList<Int> = LinkedList()
         for ((index,tile) in TileList.withIndex())
         {
             tile.setOnClickListener {
-                if(isClicked) {
+                if (!(isMatched.contains(index)||index==clickedIndex)) {
                     tile.setImageResource(ImageStack[index])
-                    if(!checkTileMatched(index))
-                    {Thread.sleep(500)
-                        TileList[clickedIndex].setImageResource(R.drawable.tile)
-                        tile.setImageResource(R.drawable.tile)
+                    if (isClicked) {
+                        if (!checkTileMatched(index)) {
+                            Handler(Looper.getMainLooper()).postDelayed({
+                                TileList[clickedIndex].setImageResource(R.drawable.tile)
+                                tile.setImageResource(R.drawable.tile)
+                            }, 500)
+
+                        } else {
+                            isMatched.push(index)
+                            isMatched.push(clickedIndex)
+                        }
+                        isClicked = false
+                    } else {
+                        clickedIndex = index
+                        isClicked = true
                     }
-                    isClicked=false
-                }
-                else
-                {
-                    clickedIndex=index
-                    tile.setImageResource(ImageStack[index])
-                    isClicked=true
                 }
             }
         }
