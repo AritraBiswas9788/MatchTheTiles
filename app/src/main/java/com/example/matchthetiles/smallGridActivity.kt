@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.reflect.typeOf
 
 
 class SmallGridActivity : AppCompatActivity() {
@@ -21,6 +22,7 @@ class SmallGridActivity : AppCompatActivity() {
     private var randomArray = ArrayList<Int>()
     private var size = 16
     private var time = 30
+    private lateinit var timer: CountDownTimer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_small_grid)
@@ -63,16 +65,19 @@ class SmallGridActivity : AppCompatActivity() {
             }
         }
 
-        object : CountDownTimer(time.toLong()*1000, 1000) {
+
+        timer = object : CountDownTimer(time.toLong() * 1000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                tvTime.setText("Time left: " + millisUntilFinished / 1000 + "sec")
+                tvTime.text = "Time left: " + millisUntilFinished / 1000 + "sec"
             }
 
             override fun onFinish() {
                 GameResult(false)
             }
         }.start()
+
     }
+
 
     private fun onTileClicked(i: Int) {
         if(isOpen[i]) return
@@ -122,6 +127,7 @@ class SmallGridActivity : AppCompatActivity() {
 
 
     private fun GameResult(result: Boolean) {
+        timer.cancel()
         if(result){
             val builder = AlertDialog.Builder(this)
             builder.setTitle("YOU WON!")
