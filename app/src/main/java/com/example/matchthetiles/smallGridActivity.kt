@@ -1,9 +1,11 @@
 package com.example.matchthetiles
 
+
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.os.Handler
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -72,9 +74,6 @@ class SmallGridActivity : AppCompatActivity() {
                 GameResult(false)
             }
         }.start()
-
-
-
     }
 
     private fun onTileClicked(i: Int) {
@@ -102,10 +101,17 @@ class SmallGridActivity : AppCompatActivity() {
         }
         else {
             if(randomArray[i]!=randomArray[selected]){
-                TilesList[i].setImageResource(R.drawable.tile)
-                isOpen[i]= false
-                TilesList[selected].setImageResource(R.drawable.tile)
-                isOpen[selected]= false
+                val handler = Handler()
+                handler.postDelayed(
+                    Runnable {
+                        TilesList[i].setImageResource(R.drawable.tile)
+                        isOpen[i]= false
+                        TilesList[selected].setImageResource(R.drawable.tile)
+                        isOpen[selected]= false
+                    },
+                    1000
+                )
+
             }
             else{
                 matchedCount+=2
