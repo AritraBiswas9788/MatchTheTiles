@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SmallGridActivity">
-
+    tools:context=".BigGridActivity">
     <TextView
         android:id="@+id/font"
         android:layout_width="wrap_content"
@@ -51,7 +50,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -68,7 +67,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -85,7 +84,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -102,7 +101,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -119,7 +118,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView5"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -136,7 +135,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView6"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -153,7 +152,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView11"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -171,7 +170,7 @@
 
             android:id="@+id/cardView10"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -188,7 +187,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView7"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -205,7 +204,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView8"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -222,7 +221,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView9"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -239,7 +238,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -256,7 +255,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView12"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -273,11 +272,10 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView13"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView12"
             app:layout_constraintTop_toBottomOf="@+id/cardView11">
 
@@ -291,7 +289,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView14"
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -307,7 +305,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="80dp"
-            android:layout_height="120dp"
+            android:layout_height="80dp"
             android:layout_margin="15dp"
             app:cardCornerRadius="7dp"
             app:cardElevation="10dp"
@@ -316,6 +314,150 @@
 
             <ImageView
                 android:id="@+id/Tile16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView17"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+            <ImageView
+                android:id="@+id/Tile17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView18"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView17">
+
+            <ImageView
+                android:id="@+id/Tile18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView19"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView17"
+            app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+            <ImageView
+                android:id="@+id/Tile19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView20"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView19"
+            app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+            <ImageView
+                android:id="@+id/Tile20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView22"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView20"
+            app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+            <ImageView
+                android:id="@+id/Tile21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView21"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView17"
+            app:layout_constraintTop_toBottomOf="@+id/cardView19">
+
+            <ImageView
+                android:id="@+id/Tile22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView23"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView21"
+            app:layout_constraintTop_toBottomOf="@+id/cardView20">
+
+            <ImageView
+                android:id="@+id/Tile23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView23"
+            app:layout_constraintTop_toBottomOf="@+id/cardView22">
+
+            <ImageView
+                android:id="@+id/Tile24"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter" />
